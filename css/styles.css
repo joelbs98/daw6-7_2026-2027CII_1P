@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+}
+.titulo {
+  /* las clases no deben iniciar con numeros*/
+  text-align: center;
+  color: blue;
+  font-size: 3.8rem;
+}
+
+span {
+  font-size: 2rem;
+  color: brown !important;
+}
