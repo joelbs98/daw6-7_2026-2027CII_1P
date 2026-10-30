@@ -1,17 +1,51 @@
+:root {
+  /*pseudoelementos para crear variables personalizadas
+  tambien conocidos como custom properties*/
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #4682b4;
+  --secundario: rgba(255, 193, 7, 1);
+  --gris: #757575;
+}
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 16px;
+  font-family: "Krub", sans-serif;
+  /*colocarlo aca para que se aplique a todo*/
 }
 .titulo {
   /* las clases no deben iniciar con numeros*/
   text-align: center;
-  color: blue;
+  color: var(--primario);
   font-size: 3.8rem;
+  /*font-family: "Times New Roman", Times, serif; FUENTES SEGURAS*/
 }
 
-span {
+.titulo span {
   font-size: 2rem;
-  color: brown !important;
+}
+
+.contenedor {
+  width: 120rem;
+  margin-top: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0rem;
+
+  /*margin: 0 auto 0 auto;*/
+  /*margin: 0 auto;*/
+}
+.nav-bg {
+  background-color: var(--secundario);
+}
+.navegacion-principal {
+  padding: 1rem;
+}
+.navegacion-principal a {
+  color: var(--blanco);
+  text-decoration: none;
+  /*Text-Decoration se utiliza
+  para quitar el subrayado a enlaces*/
 }
