@@ -28,12 +28,14 @@ body {
 }
 
 .contenedor {
-  width: 120rem;
-  margin-top: 0rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0rem;
-
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+  /*
+max-width: 120rem; establece que el contenedor puede medir como máximo 1200 píxeles.
+width: 100%; permite que ocupe el ancho disponible en pantallas pequeñas.
+margin: 0 auto; centra el contenedor horizontalmente.
+  */
   /*margin: 0 auto 0 auto;*/
   /*margin: 0 auto;*/
 }
@@ -41,11 +43,36 @@ body {
   background-color: var(--secundario);
 }
 .navegacion-principal {
-  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* por defecto es row*/
+  align-items: center; /*espacio entre elementos*/
+  /* align-items: center; -> el justify de los columns */
 }
+@media (min-width: 480px) {
+}
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-around; /*espacio entre elementos*/
+  }
+}
+@media (min-width: 1140px) {
+}
+@media (min-width: 1400px) {
+}
+
 .navegacion-principal a {
+  display: block;
+  text-align: center;
   color: var(--blanco);
   text-decoration: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
   /*Text-Decoration se utiliza
   para quitar el subrayado a enlaces*/
+}
+.navegacion-principal a:hover {
+  background-color: var(--primario);
+  color: var(--oscuro);
 }
