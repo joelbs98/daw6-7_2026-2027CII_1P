@@ -1,22 +1,27 @@
-//comentarios de una sola linea
-/*comentarios de varias lineas
-  linea 1
-  linea 2
-  linea 3
-*/
-var producto = "Monitor 20 pulgadas";
-var disponible; //undefined
-//colocar ; no es obligatorio pero es buena practica
-producto = true; //reasignando el valor de la variable producto
-//var 1disponible = true; //no se puede iniciar con numeros
-var producto1 = "computadora",
-  producto2 = "tablet",
-  producto3 = "laptop";
+// comentario de una linea
 
-//Estilos de variables
-var nombre_producto = "Monitor HD"; //underscore
-var nombreProducto = "Monitor HD"; //camelCase
-var NombreProducto = "Monitor HD"; //PascalCase
+/*
+comentario de bloque
+*/
+
+//un lenguaje de programación tiene dos cosas bases: variables y funciones
+
+var producto = "Teclado";
+var disponible;
+producto = true;
+
+//No se puede iniciar variables con numeros o simbolos -> 1disponible X
+
+var producto1 = "Computadora",
+  categoria1 = "Tecnologia",
+  precio1 = 100;
+
+//Estilos para variables
+var nombre_producto = "Monitor"; //underscore
+var nombreProducto = "Teclado"; //camelCase
+var NombreProducto = "Mouse"; //PascalCase
 
 console.log(producto);
-//es muy importante las mayusculas y minusculas en las variables, ya que son sensibles a ello
+
+//Es muy importante las mayusculas y minusculas ya que hacen
+//diferentes variables
