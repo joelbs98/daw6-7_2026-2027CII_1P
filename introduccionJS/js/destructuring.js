@@ -1,19 +1,18 @@
+//sintaxis de un objeto
 const producto = {
-  nombreProducto: "Monitor de 20 pulgadas",
-  precio: 200,
-  disponibilidad: true,
-  categoria: "Monitores",
+    nombreProducto: "Monitor de 20 pulgadas",
+    precio: 300,
+    disponible: true,
+    categoria: "Monitores"
 };
 
 //Forma anterior
-/*const precioProducto = producto.precio;
-const nombreProducto = producto.nombreProducto;
-const disponibilidadProducto = producto.disponibilidad;
-const categoriaProducto = producto.categoria;
-console.log(precioProducto);*/
+const precioProducto = producto.precio;
+console.log(precioProducto)
 
 //Forma nueva -> destructuring
-const { nombreProducto, precio, disponibilidad, categoria } = producto;
+const {nombreProducto,precio,disponible,categoria} = producto;
 //debe tener el mismo nombre que la propiedad
-console.log(disponibilidad);
-console.log(precio);
+console.log(nombreProducto);
+console.log(categoria);
+

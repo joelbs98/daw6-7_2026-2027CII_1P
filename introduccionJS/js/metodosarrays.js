@@ -1,23 +1,29 @@
-const numeros = [1, 2, 3, 4, 5];
-console.table(numeros);
-
-const meses = new Array("Enero", "Febrero", "Marzo"); //menos comun
+const numeros = [1,2,3,4,5,6];
+console.table(numeros); 
+const meses = new Array("Enero","Febrero","Marzo"); 
 console.table(meses);
 
-//añadir elemento a un arreglo
+//añadir elementos en un arreglo
 //no recomendada
 numeros[6] = 60;
-numeros[2] = 10;
+numeros[2] = 10; //va a reemplazar el valor si ya existe el indice
+console.table(numeros);
+
 //no recomendada con push
-numeros.push(30); //agregar al final del arreglo
-numeros.push(30, 50, 15);
+numeros.push(30);//aregar al final del arreglo
+numeros.push(40,41,42); //agrego varios elementos
+
 //no recomendada con unshift
-numeros.unshift(20, 10, -2); //agregar al inicio del arreglo
-//eliminar elemento del arreglo
+numeros.unshift(20,10,-5);//aregar al inicio del arreglo
+
+//eliminar elementos de un arreglo
 numeros.pop(); //eliminar el ultimo elemento del arreglo
 numeros.shift(); //eliminar el primer elemento del arreglo
-numeros.splice(1, 3);
-//Rest operator o Spread Operator
-const nuevosNumeros = [1000, ...numeros]; //buena practica ya que no modifica el arreglo original
+
+console.table(numeros);
+numeros.splice(2,2);//va hacia el elemento que deseas y elimina los que deseas
+
+//Spread Operator -> recomendada
+const nuevosNumeros = [100,200,...numeros,10];//buena practica ya que no modificamos el arreglo original
 console.table(numeros);
 console.table(nuevosNumeros);
